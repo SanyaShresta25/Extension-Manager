@@ -124,7 +124,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-dark text-white">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
-
+        
         {/* Header */}
         <div className="flex items-center justify-between mb-10 bg-custom-cardHeader px-4 py-3 rounded-xl shadow-md">
           <div className="flex items-center gap-2">
@@ -155,20 +155,29 @@ function App() {
           </div>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-          {filteredExtensions.map(ext => (
-            <ExtensionCard
-              key={ext.id}
-              id={ext.id}
-              title={ext.title}
-              description={ext.description}
-              logoName={ext.logoName}
-              isToggle={ext.isToggle}
-              onToggle={handleToggle}
-            />
-          ))}
-        </div>
+        {/* Cards with empty check */}
+        {filteredExtensions.length === 0 ? (
+          <div className="text-center py-12">
+            <p className="text-neutral-400 text-lg">
+              No extensions found for the selected filter.
+            </p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+            {filteredExtensions.map(ext => (
+              <ExtensionCard
+                key={ext.id}
+                id={ext.id}
+                title={ext.title}
+                description={ext.description}
+                logoName={ext.logoName}
+                isToggle={ext.isToggle}
+                onToggle={handleToggle}
+              />
+            ))}
+          </div>
+        )}
+
       </div>
     </div>
   )
