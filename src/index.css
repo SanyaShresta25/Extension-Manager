@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Neutral Colors */
+  --neutral-900: hsl(227, 75%, 14%);
+  --neutral-800: hsl(226, 25%, 17%);
+  --neutral-700: hsl(225, 23%, 24%);
+  --neutral-600: hsl(226, 11%, 37%);
+  --neutral-300: hsl(0, 0%, 78%);
+  --neutral-200: hsl(217, 61%, 90%);
+  --neutral-100: hsl(0, 0%, 93%);
+  --neutral-0: hsl(200, 60%, 99%);
+  
+  /* Red Colors */
+  --red-400: hsl(3, 86%, 64%);
+  --red-500: hsl(3, 71%, 56%);
+  --red-700: hsl(3, 77%, 44%);
+}
+
+body {
+  font-family: 'Noto Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--neutral-800);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neutral-600);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral-500);
+}
