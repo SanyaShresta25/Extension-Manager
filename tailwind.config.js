@@ -21,7 +21,16 @@ export default {
           400: 'hsl(3, 86%, 64%)',
           500: 'hsl(3, 71%, 56%)',
           700: 'hsl(3, 77%, 44%)',
-        }
+        },
+        custom: {
+          background: '#181F3A',
+          border: '#2E3650',
+          borderHover: '#3E4C75',
+          cardHeader: '#1E263F',
+          toggleInactive: '#3B4862',
+          textMuted: '#C0C8DF',
+          tab: '#2F3A5A',
+        },
       },
       fontFamily: {
         'sans': ['Noto Sans', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'sans-serif'],
