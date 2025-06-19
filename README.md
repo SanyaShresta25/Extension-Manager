@@ -5,7 +5,7 @@ A sleek and modern browser extension management interface built with React and T
 ---
 
 ## 🔗 Live Preview
-* 💻 **Challenge Source**: [Frontend Mentor - Browser Extension Manager UI](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp)
+
 * 🌐 **Live Demo**: [View it in action](#) <!-- Add your deployment URL -->
 
 ---
@@ -278,7 +278,7 @@ const handleToggle = () => {
 
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Start development server: `npm start`
+3. Start development server: `npm run dev`
 4. Open [http://localhost:3000](http://localhost:3000)
 
 ---
