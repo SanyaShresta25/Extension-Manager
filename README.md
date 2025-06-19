@@ -6,7 +6,7 @@ A sleek and modern browser extension management interface built with React and T
 
 ## 🔗 Live Preview
 
-* 🌐 **Live Demo**: [View it in action](#) <!-- Add your deployment URL -->
+* 🌐 **Live Demo**: [View it in action](https://extension-manager-blue.vercel.app/) 
 
 ---
 
